@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -102,6 +102,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -124,6 +125,68 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="CreateMonster.cpp" />
+    <ClCompile Include="Goblin.cpp" />
+    <ClCompile Include="Orc.cpp" />
+    <ClCompile Include="Slime.cpp" />
+    <ClCompile Include="StageMistyForest.cpp" />
+    <ClCompile Include="Troll.cpp" />
+    <ClCompile Include="Archer.cpp" />
+    <ClCompile Include="Warrior.cpp" />
+    <ClCompile Include="Wizard.cpp" />
+    <ClCompile Include="BattleManager.cpp" />
+    <ClCompile Include="BattleDice.cpp" />
+    <ClCompile Include="BattleSupply.cpp" />
+    <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="RollDice.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="ItemManager.cpp" />
+    <ClCompile Include="Store.cpp" />
+    <ClCompile Include="StageManager.cpp" />
+    <ClCompile Include="StageDarkCave.cpp" />
+    <ClCompile Include="StageDirtySwamp.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GameFlowManager.cpp" />
+    <ClCompile Include="AttackStrategy.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="LayoutManager.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="CreateMonster.h" />
+    <ClInclude Include="Goblin.h" />
+    <ClInclude Include="Orc.h" />
+    <ClInclude Include="Slime.h" />
+    <ClInclude Include="StageMistyForest.h" />
+    <ClInclude Include="SpriteManager.h" />
+    <ClInclude Include="Troll.h" />
+    <ClInclude Include="Archer.h" />
+    <ClInclude Include="Warrior.h" />
+    <ClInclude Include="Wizard.h" />
+    <ClInclude Include="Job.h" />
+    <ClInclude Include="Stat.h" />
+    <ClInclude Include="BattleManager.h" />
+    <ClInclude Include="BattleDice.h" />
+    <ClInclude Include="BattleTable.h" />
+    <ClInclude Include="BattleSupply.h" />
+    <ClInclude Include="Boss.h" />
+    <ClInclude Include="AttackStrategy.h" />
+    <ClInclude Include="RollDice.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="ItemFactory.h" />
+    <ClInclude Include="ItemManager.h" />
+    <ClInclude Include="LogSystem.h" />
+    <ClInclude Include="Store.h" />
+    <ClInclude Include="RandomManager.h" />
+    <ClInclude Include="MakeRandom.h" />
+    <ClInclude Include="Stage.h" />
+    <ClInclude Include="StageDarkCave.h" />
+    <ClInclude Include="StageDirtySwamp.h" />
+    <ClInclude Include="StageManager.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GameFlowManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
